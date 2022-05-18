@@ -1,0 +1,57 @@
+* {
+  max-width: 800px;
+}
+
+::after {
+  box-sizing: border-box;
+}
+
+::before {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid lightgray;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.card {
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 15rem;
+  border-radius: 10px;
+  /*background-image: url(https://source.unsplash.com/random/300×300);
+  background-size: 15rem, 2rem, cover;
+  background-repeat: no-repeat; */
+}
+
+.picture {
+  border-radius: 50%;
+  margin-top: 2rem;
+}
+
+.button {
+  all: unset;
+  color: blue;
+  border: 1px solid currentColor;
+  padding: 0.25rem 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
